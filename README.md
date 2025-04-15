@@ -80,7 +80,7 @@ spark.stop()
 
 Run with:  
 ```bash
-spark-submit word_count.py
+spark-submit --conf spark.local.dir=/home/ec2-user/spark-temp --conf spark.jars.ivy=/home/ec2-user/.ivy2 --packages org.apache.hadoop:hadoop-aws:3.3.4,com.amazonaws:aws-java-sdk-bundle:1.12.367 word_count.py
 ```
 
 ---
